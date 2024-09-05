@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap avançado</title>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+
+    <style>
+        body {
+            background-color: #02631b;
+        }
+
+        .container h1{
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="3000" class="carousel-item active">
+                    <img class="d-block w-100" src="imagens/libertadores.webp" alt="Torcida Fluminense">
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="imagens/time em campo.jpg" alt="Conca comemorando">
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="imagens/torcida-fluminense-maracana.webp" alt="jogadores em campo">
+                </div>
+            </div>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Titulos recentes</h1>
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4">
+                <article class="card text-bg-dark">
+                    <header class="card-header">
+                        Título 1
+                    </header>
+                    <img src="imagens/libertadores2023.jpg" max-width="33%" alt="Foto jogador segurando a taça">
+                    <div class="card-body">
+                        <h4 class="card-title"> Libertadores 2023</h4>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit illum consequatur possimus
+                            facilis repellendus harum alias dolorum quam magni, architecto ea molestias sit at tempore
+                            beatae nam reprehenderit quos obcaecati!
+                        </p>
+                        <a href="#" class="btn btn-primary">Saiba mais</a>
+                    </div>
+                    <br>
+                </article>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        Título 2
+                    </div>
+                    <img src="imagens/Recopa2023.jpg" style="width:100%" max-width="33%"
+                        alt="Fotos jogadores comemorando">
+                    <div class="card-body">
+                        <h4 class="card-title">Recopa 2023</h4>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit illum consequatur possimus
+                            facilis repellendus harum alias dolorum quam magni, architecto ea molestias sit at tempore
+                            beatae nam
+                        </p>
+                        <a href="#" class="btn btn-primary">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        Título 3
+                    </div>
+                    <img src="imagens/carioca 2023.avif" max-width="33%" alt="Fotos jogadores comemorando">
+                    <div class="card-body">
+                        <h4 class="card-title">Carioca 2023</h4>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit illum consequatur possimus
+                            facilis repellendus harum alias dolorum quam magni, architecto ea molestias sit at tempore
+                            beatae nam reprehenderit quos obcaecati! magni, architecto ea architecto ea
+                        </p>
+                        <a href="#" class="btn btn-primary">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="lib/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
